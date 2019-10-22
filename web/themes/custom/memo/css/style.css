@@ -7474,13 +7474,15 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-body {
-  background-color: burlywood; }
+/*body {
+    background-color: burlywood;
+}
 
 header {
-  background-color: #f1cab3;
-  height: 50px; }
-
+    background-color: rgb(241, 202, 179);
+    height: 50px;
+}
+*/
 header > div > div > h1 {
   text-align: right; }
   @media (max-width: 767.98px) {
@@ -7500,6 +7502,19 @@ header > div > div > img {
       margin-top: 5px;
       margin-left: 40%; } }
 
+#navbar-main {
+  background: transparent; }
+
+nav.navbar {
+  display: block;
+  background: transparent; }
+  nav.navbar h1 {
+    text-align: center;
+    background-color: #6c757d; }
+
+.navbar-collapse {
+  justify-content: center; }
+
 .col-6 {
   width: 47.916666666%;
   /*460/960*100*/ }
@@ -7513,6 +7528,23 @@ header > div > div > img {
   @media (max-width: 991.98px) {
     .col-3 {
       min-width: 100%; } }
+
+.cards-column article {
+  background-color: #6c757d;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px; }
+  .cards-column article:hover .views-field-field-reponse {
+    display: block; }
+  .cards-column article div .field-content {
+    text-overflow: ellipsis;
+    word-wrap: break-word; }
+  .cards-column article .views-field-title a {
+    color: white;
+    font-size: 1.5rem; }
+  .cards-column article .views-field-field-reponse {
+    display: none; }
 
 /* Sélection par héritage */
 #main-nav ul li button {
