@@ -1,0 +1,167 @@
+body {
+    background-color: burlywood;
+}
+
+header {
+    background-color: rgb(241, 202, 179);
+    height: 50px;
+}
+
+header>div>div>h1 {
+    text-align: right;
+    @include media-breakpoint-down(sm){
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+header>div>div>img {
+    height: 40px ;
+    width: 40px;
+    margin-top: 5px;
+    @include media-breakpoint-down(sm){
+        text-align: center;
+        height: 40px ;
+        width: 40px;
+        margin-top: 5px;
+        margin-left: 40%;
+    }
+}
+
+.col-6 {
+    width: 47.916666666%;
+    /*460/960*100*/
+}
+
+.col-12 {
+    width: 97.916666666%;
+}
+
+.col-3 {
+    // width:22.9166666667%;
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-down(md){
+        min-width: 100%;
+    }
+}
+
+
+
+/* Sélection par héritage */
+#main-nav ul li button {
+    background-color: rgb(228, 169, 82);
+    border-radius:10px 0px; 
+    margin: 10px 20px;  
+    padding: 5px; 
+} 
+
+#main-nav ul li {
+    list-style: none;
+    
+}
+
+#main-nav ul:after {
+    content: "";
+    clear: both;
+    display: block
+}
+
+/* Pseudo classe */
+button:hover {
+    cursor: pointer;
+}
+
+main {
+    margin: 0px 10px;
+}
+main>div>div>section>h3 {
+    text-align: center;
+}
+.btn-success {
+     margin-right: 20px;
+}
+
+.card {
+    min-height: 50px;
+    background-color: grey;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+article>.card {
+    margin-bottom: 10px;
+}
+
+
+.row {
+    @include media-breakpoint-down(md){
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*
+button::before {
+    content: ">";
+    padding-right: 10px;
+}
+
+*/
+
+
+/*
+
+//variables des couleurs
+//$blue_memo:#3333FF;
+//$dark_blue_memo:rgb(5,5,77);
+
+//lien
+
+//a {
+//    color: $blue_memo;
+//}
+//
+//a:hover {
+//   color: $dark_blue_memo;
+//}
+
+//est l'équivalent de dessous mais moins propre
+
+//a {
+//    color: $blue_memo;
+//    //nesting
+//    &:hover {
+//        color: $dark_blue_memo;
+//    }
+//    @include media-breakpoint-down(sm) {
+//        color: red;
+ //   }
+//}
+
+
+
+
+
+//header {
+//    background-color: rgb(241, 202, 179);
+//}
+
+//header h1 {
+//    text-align: center;
+//    color: rgb(131, 149, 187);
+//}
+*/
