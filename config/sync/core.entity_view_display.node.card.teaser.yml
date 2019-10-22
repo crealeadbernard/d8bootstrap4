@@ -1,0 +1,22 @@
+uuid: ea09154b-b4a5-458c-8061-00348b3df619
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.card.field_reponse
+    - node.type.card
+  module:
+    - user
+id: node.card.teaser
+targetEntityType: node
+bundle: card
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_reponse: true

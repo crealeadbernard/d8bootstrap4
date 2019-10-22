@@ -1,0 +1,22 @@
+uuid: f1428e67-28f3-44a9-b129-3ee9923c309d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - memo
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: memo_content
+theme: memo
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

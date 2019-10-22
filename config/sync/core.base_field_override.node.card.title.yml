@@ -1,0 +1,18 @@
+uuid: cd9d1be4-fc35-4400-a12a-47b0b1d84d1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.card
+id: node.card.title
+field_name: title
+entity_type: node
+bundle: card
+label: Question
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

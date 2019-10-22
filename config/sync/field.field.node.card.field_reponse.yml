@@ -1,0 +1,19 @@
+uuid: 167cc178-3112-4751-852e-11f1e99aab20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reponse
+    - node.type.card
+id: node.card.field_reponse
+field_name: field_reponse
+entity_type: node
+bundle: card
+label: Réponse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

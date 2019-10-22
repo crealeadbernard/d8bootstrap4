@@ -1,0 +1,8 @@
+uuid: 09a6dcef-50e7-46be-b631-0eee022fa03d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Card column'
+vid: card_column
+description: ''
+weight: 0
